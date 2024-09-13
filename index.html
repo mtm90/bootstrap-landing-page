@@ -14,11 +14,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        
       /* Color Palette */
       :root {
         --primary-color: #575366;
@@ -29,7 +31,7 @@
       }
 
       body {
-        font-family: "Roboto" , sans-serif;
+        font-family: "Roboto", sans-serif;
         margin-top: 50px;
         color: var(--text-color-dark);
         background-color: var(--progress-bg);
@@ -61,7 +63,6 @@
 
       #about {
         background-color: var(--background-light);
-        
       }
       #contact {
         background-color: white;
@@ -158,7 +159,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a id="brand" class="navbar-brand" href="#">My Bootstrap Landing page</a>
+        <a id="brand" class="navbar-brand" href="#"
+          >My Bootstrap Landing page</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -173,7 +176,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#brand">About me</a>
+              <a class="nav-link" href="#about">About me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#soft">Soft Skills</a>
@@ -197,11 +200,15 @@
       <h1 class="mb-4">Hi I'm Mattia!</h1>
       <p class="lead me-4 ms-4">
         I am a passionate web developer with a focus on creating clean and
-        efficient code. <br> Feel free to explore my skills and get in touch through my
-        contact form!
+        efficient code. <br />
+        Feel free to explore my skills and get in touch through my contact form!
       </p>
-      <button id="get-in-touch" type="submit" class="btn mt-2"><a href="#contact">Contact me!</a></button>
-      <br /> <br> <br>
+      <button id="get-in-touch" type="submit" class="btn mt-2">
+        <a href="#contact">Contact me!</a>
+      </button>
+      <br />
+      <br />
+      <br />
       <p class="lead me-4 ms-4">
         With a strong foundation in <span>Economics</span>, I've discovered my
         passion for coding and technology. My journey through chess and online
@@ -496,57 +503,58 @@
       });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          // Select all the nav links
-          const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-          const navbarCollapse = document.querySelector('.navbar-collapse');
-          
-          navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-              // Collapse the navbar if it's open (in mobile view)
-              if (navbarCollapse.classList.contains('show')) {
-                new bootstrap.Collapse(navbarCollapse).hide();
-              }
-            });
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select all the nav links
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            // Collapse the navbar if it's open (in mobile view)
+            if (navbarCollapse.classList.contains("show")) {
+              new bootstrap.Collapse(navbarCollapse).hide();
+            }
           });
         });
-      </script>
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-          
-          navLinks.forEach(link => {
-            link.addEventListener('click', function (e) {
-              // Prevent the default anchor behavior
-              e.preventDefault();
-              
-              // Get the target section's id from the href of the clicked link
-              const targetId = this.getAttribute('href').substring(1);
-              const targetSection = document.getElementById(targetId);
-      
-              if (targetSection) {
-                // Get the position of the target section relative to the page top
-                const sectionPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
-                
-                // Get the height of the window (viewport)
-                const windowHeight = window.innerHeight;
-                
-                // Get the height of the section to center it
-                const sectionHeight = targetSection.offsetHeight;
-      
-                // Calculate the position to scroll to, so the section appears in the center of the viewport
-                const scrollPosition = sectionPosition - ((windowHeight - sectionHeight) / 2);
-                
-                // Scroll smoothly to the calculated position
-                window.scrollTo({
-                  top: scrollPosition,
-                  behavior: 'smooth'
-                });
-              }
-            });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            // Prevent the default anchor behavior
+            e.preventDefault();
+
+            // Get the target section's id from the href of the clicked link
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+              // Get the position of the target section relative to the page top
+              const sectionPosition =
+                targetSection.getBoundingClientRect().top + window.pageYOffset;
+
+              // Get the height of the window (viewport)
+              const windowHeight = window.innerHeight;
+
+              // Get the height of the section to center it
+              const sectionHeight = targetSection.offsetHeight;
+
+              // Calculate the position to scroll to, so the section appears in the center of the viewport
+              const scrollPosition =
+                sectionPosition - (windowHeight - sectionHeight) / 2;
+
+              // Scroll smoothly to the calculated position
+              window.scrollTo({
+                top: scrollPosition,
+                behavior: "smooth",
+              });
+            }
           });
         });
-      </script>
- 
+      });
+    </script>
   </body>
 </html>
