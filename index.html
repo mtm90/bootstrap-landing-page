@@ -514,6 +514,43 @@
           });
         });
       </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+          
+          navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+              // Prevent the default anchor behavior
+              e.preventDefault();
+              
+              // Get the target section's id from the href of the clicked link
+              const targetId = this.getAttribute('href').substring(1);
+              const targetSection = document.getElementById(targetId);
+      
+              if (targetSection) {
+                // Get the position of the target section relative to the page top
+                const sectionPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+                
+                // Get the height of the window (viewport)
+                const windowHeight = window.innerHeight;
+                
+                // Get the height of the section to center it
+                const sectionHeight = targetSection.offsetHeight;
+      
+                // Calculate the position to scroll to, so the section appears in the center of the viewport
+                const scrollPosition = sectionPosition - ((windowHeight - sectionHeight) / 2);
+                
+                // Scroll smoothly to the calculated position
+                window.scrollTo({
+                  top: scrollPosition,
+                  behavior: 'smooth'
+                });
+              }
+            });
+          });
+        });
+      </script>
+      
       
   </body>
 </html>
