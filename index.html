@@ -111,7 +111,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#">My Landing page</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -153,20 +153,20 @@
             strengths will contribute to my success.
         </p>
 
-        <!-- Soft Skills List -->
-        <h3 class="mt-5 mb-3">Soft Skills</h3>
-        <ul id="softSkills" class="list-group list-group-flush text-start text-sm-center">
-            <li class="list-group-item">Creativity</li>
-            <li class="list-group-item">Multipotentiality</li>
-            <li class="list-group-item">Rapid Thinking</li>
-            <li class="list-group-item">Adaptability</li>
-            <li class="list-group-item">Problem-solving</li>
-            <li class="list-group-item">Time management</li>
-            <li class="list-group-item">Active listening</li>
-            <li class="list-group-item">Accountability</li>
-            <li class="list-group-item">Punctuality</li>
-            <li class="list-group-item">Coaching and mentoring</li>
-        </ul>
+<!-- Soft Skills List with Tooltips -->
+<h3 class="mt-5 mb-3">Soft Skills</h3>
+<ul id="softSkills" class="list-group list-group-flush text-start text-sm-center">
+    <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Thinking outside the box">Creativity</li>
+    <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Capable in multiple areas">Multipotentiality</li>
+    <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick on your feet">Rapid Thinking</li>
+    <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Adapting to new situations">Adaptability</li>
+    <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Solving complex problems">Problem-solving</li>
+    <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Efficient use of time">Time management</li>
+    <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Listening attentively">Active listening</li>
+    <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Taking responsibility">Accountability</li>
+    <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Being on time">Punctuality</li>
+    <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Guiding and teaching others">Coaching and mentoring</li>
+</ul>
     </section>
 
     <!-- Social Links -->
@@ -246,6 +246,10 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>
