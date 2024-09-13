@@ -55,8 +55,7 @@
         background-color: white;
       }
 
-      #about
-      {
+      #about {
         background-color: var(--background-light);
       }
       #contact {
@@ -79,7 +78,7 @@
       }
 
       .progress-bar {
-        background-color: var(--primary-color);
+        background-color: var(--text-color-dark);
       }
 
       /* Button styling */
@@ -138,7 +137,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">My Landing page</a>
+        <a id="brand" class="navbar-brand" href="#">My Bootstrap Landing page</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -194,104 +193,142 @@
         will contribute to my success.
       </p>
 
-<!-- Soft Skills Section with Bootstrap Cards -->
-<section id="soft" class="container my-5 p-lg-5 text-center">
-    <h3 class="mt-2 mb-5">Soft Skills</h3>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="Creativity allows me to find innovative solutions, think outside the box, and come up with unique ideas for challenges.">
-          <div class="card-body">
-            <i class="fas fa-lightbulb fa-2x mb-2"></i>
-            <h5 class="card-title">Creativity</h5>
+      <!-- Soft Skills Section with Bootstrap Cards -->
+      <section id="soft" class="container my-5 p-lg-5 text-center">
+        <h3 class="mt-2 mb-5">Soft Skills</h3>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div
+              class="card text-center"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Creativity allows me to find innovative solutions, think outside the box, and come up with unique ideas for challenges."
+            >
+              <div class="card-body">
+                <i class="fas fa-lightbulb fa-2x mb-2"></i>
+                <h5 class="card-title">Creativity</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card text-center"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Being multipotential allows me to excel in various domains and bring knowledge from different areas to solve complex problems."
+            >
+              <div class="card-body">
+                <i class="fas fa-brain fa-2x mb-2"></i>
+                <h5 class="card-title">Multipotentiality</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card text-center"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="I can think on my feet, quickly process information, and come up with effective solutions under pressure."
+            >
+              <div class="card-body">
+                <i class="fas fa-bolt fa-2x mb-2"></i>
+                <h5 class="card-title">Rapid Thinking</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card text-center"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="I adapt to new environments and challenges with ease, ensuring that I am always ready to pivot and learn."
+            >
+              <div class="card-body">
+                <i class="fas fa-sync-alt fa-2x mb-2"></i>
+                <h5 class="card-title">Adaptability</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card text-center"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="A strong problem-solver, I approach obstacles methodically, breaking down complex issues to find the best possible solutions."
+            >
+              <div class="card-body">
+                <i class="fas fa-cogs fa-2x mb-2"></i>
+                <h5 class="card-title">Problem-solving</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card text-center"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="I manage my time effectively, balancing multiple projects and deadlines without compromising on the quality of my work."
+            >
+              <div class="card-body">
+                <i class="fas fa-clock fa-2x mb-2"></i>
+                <h5 class="card-title">Time Management</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card text-center"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Active listening helps me understand others’ needs fully, making communication more efficient and avoiding misunderstandings."
+            >
+              <div class="card-body">
+                <i class="fas fa-ear-listen fa-2x mb-2"></i>
+                <h5 class="card-title">Active Listening</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card text-center"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="I take responsibility for my actions and deliver on promises, ensuring accountability in every task I take on."
+            >
+              <div class="card-body">
+                <i class="fas fa-check fa-2x mb-2"></i>
+                <h5 class="card-title">Accountability</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card text-center"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="I value punctuality, always ensuring I meet deadlines and commitments, which reflects my professional reliability."
+            >
+              <div class="card-body">
+                <i class="fas fa-calendar-check fa-2x mb-2"></i>
+                <h5 class="card-title">Punctuality</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card text-center"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="I guide and mentor others, helping them grow in their careers through structured advice, coaching, and support."
+            >
+              <div class="card-body">
+                <i class="fas fa-chalkboard-teacher fa-2x mb-2"></i>
+                <h5 class="card-title">Coaching and Mentoring</h5>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="Being multipotential allows me to excel in various domains and bring knowledge from different areas to solve complex problems.">
-          <div class="card-body">
-            <i class="fas fa-brain fa-2x mb-2"></i>
-            <h5 class="card-title">Multipotentiality</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="I can think on my feet, quickly process information, and come up with effective solutions under pressure.">
-          <div class="card-body">
-            <i class="fas fa-bolt fa-2x mb-2"></i>
-            <h5 class="card-title">Rapid Thinking</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="I adapt to new environments and challenges with ease, ensuring that I am always ready to pivot and learn.">
-          <div class="card-body">
-            <i class="fas fa-sync-alt fa-2x mb-2"></i>
-            <h5 class="card-title">Adaptability</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="A strong problem-solver, I approach obstacles methodically, breaking down complex issues to find the best possible solutions.">
-          <div class="card-body">
-            <i class="fas fa-cogs fa-2x mb-2"></i>
-            <h5 class="card-title">Problem-solving</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="I manage my time effectively, balancing multiple projects and deadlines without compromising on the quality of my work.">
-          <div class="card-body">
-            <i class="fas fa-clock fa-2x mb-2"></i>
-            <h5 class="card-title">Time Management</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="Active listening helps me understand others’ needs fully, making communication more efficient and avoiding misunderstandings.">
-          <div class="card-body">
-            <i class="fas fa-ear-listen fa-2x mb-2"></i>
-            <h5 class="card-title">Active Listening</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="I take responsibility for my actions and deliver on promises, ensuring accountability in every task I take on.">
-          <div class="card-body">
-            <i class="fas fa-check fa-2x mb-2"></i>
-            <h5 class="card-title">Accountability</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="I value punctuality, always ensuring I meet deadlines and commitments, which reflects my professional reliability.">
-          <div class="card-body">
-            <i class="fas fa-calendar-check fa-2x mb-2"></i>
-            <h5 class="card-title">Punctuality</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top"
-          title="I guide and mentor others, helping them grow in their careers through structured advice, coaching, and support.">
-          <div class="card-body">
-            <i class="fas fa-chalkboard-teacher fa-2x mb-2"></i>
-            <h5 class="card-title">Coaching and Mentoring</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  
+      </section>
     </section>
 
     <!-- Social Links -->
@@ -312,61 +349,92 @@
 
     <!-- Skills Section with Progress Bars -->
     <section id="skills" class="container text-center">
-        <h2 class="mb-4">Hard Skills</h2>
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <h5>HTML</h5>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%">
-                80%
-              </div>
+      <h2 class="mb-4">Hard Skills</h2>
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h5>HTML</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              style="width: 80%"
+            >
+              80%
             </div>
-            <h5>CSS</h5>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%">
-                80%
-              </div>
+          </div>
+          <h5>CSS</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              style="width: 80%"
+            >
+              80%
             </div>
-            <h5>JavaScript</h5>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%">
-                50%
-              </div>
+          </div>
+          <h5>JavaScript</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              style="width: 50%"
+            >
+              50%
             </div>
-            <h5>C#</h5>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%">
-                50%
-              </div>
+          </div>
+          <h5>C#</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              style="width: 50%"
+            >
+              50%
             </div>
-            <h5>Git</h5>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%">
-                50%
-              </div>
+          </div>
+          <h5>Git</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              style="width: 50%"
+            >
+              50%
             </div>
-            <h5>Bootstrap</h5>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%">
-                25%
-              </div>
+          </div>
+          <h5>Bootstrap</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              style="width: 25%"
+            >
+              25%
             </div>
-            <h5>React</h5>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%">
-                25%
-              </div>
+          </div>
+          <h5>React</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              style="width: 25%"
+            >
+              25%
             </div>
-            <h5>Node.js</h5>
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%">
-                25%
-              </div>
+          </div>
+          <h5>Node.js</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              style="width: 25%"
+            >
+              25%
             </div>
           </div>
         </div>
-      </section>
-      
+      </div>
+    </section>
 
     <!-- Contact Section with Form -->
     <section id="contact" class="container my-5 text-center">
@@ -397,7 +465,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark py-4">
+    <footer class="py-4">
       <div class="container text-center">
         <p>&copy; 2024 Mattia Totonchi Moghaddam | All rights reserved.</p>
       </div>
