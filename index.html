@@ -20,7 +20,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <style>
       /* Color Palette */
@@ -36,6 +35,50 @@
         font-family: "Roboto", sans-serif;
         color: var(--text-color-dark);
         background-color: var(--progress-bg);
+      }
+      @keyframes slidein {
+        from {
+          translate: 150vw 0;
+          scale: 200% 1;
+        }
+
+        to {
+          translate: 0 0;
+          scale: 100% 1;
+        }
+      }
+      @keyframes slideinRight {
+        from {
+          translate: -150vw 0;
+          scale: 200% 1;
+        }
+
+        to {
+          translate: 0 0;
+          scale: 100% 1;
+        }
+        
+      }
+      @keyframes bounceIn {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+
+      h3 {
+        animation-name: slideinRight;
+        animation-duration: 1s;
+      }
+      h1 {
+        animation-name: slidein;
+        animation-duration: 1s;
       }
 
       /* Navbar styling */
@@ -87,7 +130,7 @@
       .progress-bar {
         background-color: var(--text-color-dark);
       }
-   
+  
       /* Button styling */
       .btn-primary {
         background-color: var(--background-light);
@@ -101,6 +144,10 @@
       .btn-primary:hover {
         background-color: var(--melon);
         color: var(--text-color-dark);
+      }
+      #get-in-touch {
+        animation-name: bounceIn;
+        animation-duration: 1s;
       }
       #get-in-touch, #my-profile {
         background-color: var(--primary-color);
@@ -208,11 +255,11 @@
     <section id="about" class="container my-5 p-sm-5 text-center">
       <div class="row align-items-center">
         <div class="col-lg-6">
-          <h1 class="mb-4 animate__animated animate__fadeInLeft" style="font-size: 3rem;">Hi, I'm Mattia!</h1>
-          <h3 class="lead me-4 ms-4 animate__animated animate__fadeInRight" style="font-size: 1.5rem;">
+          <h1 class="mb-4" style="font-size: 3rem;">Hi, I'm Mattia!</h1>
+          <h3 class="lead me-4 ms-4" style="font-size: 1.5rem;">
             Passionate Software Developer crafting clean, efficient code. I believe in building <span>beautiful</span> and <span>functional</span> websites that make an impact.
           </h3>
-          <button id="get-in-touch" type="submit" class="btn mt-4 animate__animated animate__bounceIn" style="background-color: var(--melon); color: white; font-size: large;">
+          <button id="get-in-touch" type="submit" class="btn mt-4" style="background-color: var(--melon); color: white; font-size: large;">
             <a href="#contact" style="text-decoration: none;"><i class="fas fa-envelope"></i> Contact Me!</a>
           </button>
         </div>
