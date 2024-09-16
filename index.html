@@ -25,40 +25,42 @@
       /* Color Palette */
       :root {
         --primary-color: #1d3557;
-        --background-light: #457b9d;
-        --text-color-dark: #13293d;
-        --progress-bg: #f1faee;
-        --melon: #e63946;
+        --lighter-primary-color: #457b9d;
+        --darker-color: #13293d;
+        --ultra-light: #f1faee;
+        --secondary-color: #e63946;
       }
-
+    
+      /* General body styling */
       body {
         font-family: "Roboto", sans-serif;
-        color: var(--text-color-dark);
-        background-color: var(--progress-bg);
+        color: var(--darker-color);
+        background-color: var(--ultra-light);
       }
+    
+      /* Animations */
       @keyframes slidein {
         from {
           translate: 150vw 0;
           scale: 200% 1;
         }
-
         to {
           translate: 0 0;
           scale: 100% 1;
         }
       }
+    
       @keyframes slideinRight {
         from {
           translate: -150vw 0;
           scale: 200% 1;
         }
-
         to {
           translate: 0 0;
           scale: 100% 1;
         }
-        
       }
+    
       @keyframes bounceIn {
         0%, 20%, 50%, 80%, 100% {
           transform: translateY(0);
@@ -71,31 +73,32 @@
           transform: translateY(-15px);
         }
       }
-
-      h3 {
-        animation-name: slideinRight;
-        animation-duration: 1s;
-      }
+    
       h1 {
         animation-name: slidein;
         animation-duration: 1s;
       }
-
+    
+      h3 {
+        animation-name: slideinRight;
+        animation-duration: 1s;
+      }
+    
       /* Navbar styling */
       .navbar {
         background-color: var(--primary-color);
       }
-
+    
       .navbar-brand,
       .navbar-nav .nav-link {
-        color: #f4f7f5 !important;
+        color: var(--ultra-light) !important;
       }
-
+    
       .navbar-nav .nav-link:hover {
-        color: var(--progress-bg) !important;
+        color: var(--secondary-color) !important;
       }
-
-      /* Section styling with borders, rounded corners, and box shadow */
+    
+      /* Section styling */
       section {
         padding: 60px 0;
         border: 2px solid var(--primary-color);
@@ -104,112 +107,116 @@
         margin-bottom: 30px;
         background-color: white;
       }
-
+    
+      /* Specific sections */
       #about {
-        background-color: var(--background-light);
+        background-color: var(--lighter-primary-color);
       }
+    
       #contact {
         background-color: white;
       }
-
+    
       /* Social links styling */
       #social-links a {
         color: var(--primary-color);
         margin: 0 15px;
       }
-
+    
       #social-links a:hover {
-        color: var(--melon);
+        color: var(--secondary-color);
       }
-
+    
       /* Progress bars styling */
       .progress {
-        background-color: var(--progress-bg);
-        border: 0.5px solid var(--text-color-dark);
+        background-color: var(--ultra-light);
+        border: 0.5px solid var(--darker-color);
       }
-
+    
       .progress-bar {
-        background-color: var(--melon);
-        
+        background-color: var(--secondary-color);
       }
-  
+    
       /* Button styling */
       .btn-primary {
-        background-color: var(--background-light);
+        background-color: var(--lighter-primary-color);
         border: none;
         color: white;
         width: 150px;
         height: 75px;
         font-size: x-large;
       }
-
+    
       .btn-primary:hover {
-        background-color: var(--melon);
-        color: var(--text-color-dark);
+        background-color: var(--secondary-color);
+        color: var(--darker-color);
       }
-      #get-in-touch {
-        animation-name: bounceIn;
-        animation-duration: 1s;
-      }
-      #get-in-touch, #my-profile {
+    
+      /* Hero and profile buttons */
+      #get-in-touch,
+      #my-profile {
         background-color: var(--primary-color);
         font-size: xx-large;
         width: 12rem;
         height: 4rem;
-        border: 2px solid var(--text-color-dark);
+        border: 2px solid var(--darker-color);
       }
+    
       #get-in-touch a {
         text-decoration: none;
         color: white;
       }
+    
       #get-in-touch:hover {
-        background-color: var(--progress-bg);
-
+        background-color: var(--ultra-light);
       }
+    
       #get-in-touch a:hover {
-        color: var(--text-color-dark);
+        color: var(--darker-color);
       }
+    
+      #get-in-touch {
+        animation-name: bounceIn;
+        animation-duration: 1s;
+      }
+    
+      /* Profile section */
       #profile-section p span {
-        color:  var(--melon);
+        color: var(--secondary-color);
         font-weight: 500;
       }
-
+    
       /* Footer styling */
       footer {
         background-color: var(--primary-color);
         color: #f4f7f5;
       }
-
+    
       footer p {
         margin: 0;
       }
-
-      /* Hover effects */
+    
+      /* Soft Skills hover effect */
       #softSkills li:hover {
-        background-color: var(--melon);
+        background-color: var(--secondary-color);
       }
+    
       #skills {
         background-color: white;
       }
-
-      span {
-        color: #f4f7f5;
-        font-weight: 400;
-      }
+    
+      /* Tooltip customization */
       .tooltip-inner {
-        background-color: var(
-          --primary-color
-        ) !important; /* Tooltip background */
-        color: var(--progress-bg) !important; /* Tooltip text color */
-        border: 1px dotted var(--melon) !important; /* Tooltip border */
+        background-color: var(--primary-color) !important;
+        color: var(--ultra-light) !important;
+        border: 1px dotted var(--secondary-color) !important;
       }
-
+    
       .tooltip-arrow {
-        border-top-color: var(
-          --primary-color
-        ) !important; /* Tooltip arrow color */
+        border-top-color: var(--primary-color) !important;
       }
     </style>
+    
   </head>
 
   <body>
@@ -261,7 +268,7 @@
           <h3 class="lead me-4 ms-4" style="font-size: 1.5rem;">
             Passionate Software Developer crafting clean, efficient code. I believe in building <span>beautiful</span> and <span>functional</span> websites that make an impact.
           </h3>
-          <button id="get-in-touch" type="submit" class="btn mt-4" style="background-color: var(--melon); color: white; font-size: large;">
+          <button id="get-in-touch" type="submit" class="btn mt-4" style="background-color: var(--secondary-color); color: white; font-size: large;">
             <a href="#contact" style="text-decoration: none;"><i class="fas fa-envelope"></i> Contact Me!</a>
           </button>
         </div>
